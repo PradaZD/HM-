@@ -3,12 +3,156 @@
   width: 1200px;
   margin: 0 auto;
 }
-/* logo */
+/* 1.logo */
 .logo {
   height: 80px;
   background: url(../images/register/logo拷贝2.png) no-repeat left center;
   border-bottom: 2px solid #b1191a;
 }
-/* register */
+/*2. register */
+.register {
+  height: 525px;
+  margin-top: 22px;
+  box-sizing: border-box;
+  border: 1px solid #dfdfdf;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 39px;
+  line-height: 39px;
+  font-weight: 400;
+  border-bottom: 1px solid #dfdfdf;
+  color: #585858;
+  background-color: #ececec;
+}
+.header_child {
+  padding: 0 12px;
+}
+.title {
+  margin: 0;
+  font-size: 18px;
+}
+.login {
+  font-size: 14px;
+}
+.login a {
+  margin-left: -5px;
+  text-decoration: none;
+  color: red;
+}
+/*2.1 form表单部分  */
+.content {
+  height: 370px;
+  padding-top: 40px;
+}
+.table {
+  width: 545px;
+  margin: auto;
+  /* 去掉table默认样式 */
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table_child {
+  font-size: 14px;
+  color: #585858;
+}
+.table_child > td {
+  /* 直接设置tr的高度不起效果，那就设置td */
+  height: 60px;
+  box-sizing: border-box;
+}
+input {
+  width: 240px;
+  height: 36px;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+}
+.text {
+  text-align: right;
+}
+.alarm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 12px;
+}
+.alarm > p {
+  line-height: 35px;
+}
+.alarm_icon {
+  width: 22px;
+  height: 22px;
+  margin: auto 3px auto 5px;
+  background: url(../images/register/alarm_icon.png) no-repeat;
+}
+.secure {
+  height: 20px;
+  font-size: 12px;
+  color: #585858;
+  box-sizing: border-box;
+}
+.secure td:nth-child(2) {
+  text-align: right;
+}
+.secure td span {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+.secure td span:nth-child(1) {
+  background-color: red;
+}
+.secure td span:nth-child(2) {
+  background-color: #40b83f;
+}
+.secure td span:nth-child(3) {
+  background-color: #f79100;
+}
+.agree_check {
+  font-size: 12px;
+  color: #585858;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-starts;
+}
+/* 去除复选框默认样式 */
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+/* 2.2 提交表单 */
+/* table是一个整体，每一列td的宽度是由其中一个最长td的宽度来决定的 */
+.submit {
+  width: 200px;
+  height: 36px;
+  line-height: 36px;
+  margin: 50px 415px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #c81623;
+}
 
-/* footer */
+/*3. footer */
+.footer {
+  /* width: 545px; */
+  margin-top: 15px;
+}
+.link {
+  /* width: 100%; */
+  font-size: 12px;
+  text-align: center;
+}
+.link a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #585858;
+}
+.footer p {
+  font-size: 12px;
+  text-align: center;
+  color: #585858;
+}
